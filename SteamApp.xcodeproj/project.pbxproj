@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A269C82AE8F3EC0007151C /* SteamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269C72AE8F3EC0007151C /* SteamAppApp.swift */; };
+		F1A269CA2AE8F3EC0007151C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269C92AE8F3EC0007151C /* ContentView.swift */; };
+		F1A269CC2AE8F3ED0007151C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A269CB2AE8F3ED0007151C /* Assets.xcassets */; };
+		F1A269CF2AE8F3ED0007151C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A269CE2AE8F3ED0007151C /* Preview Assets.xcassets */; };
+		F1A269D12AE8F3ED0007151C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269D02AE8F3ED0007151C /* Persistence.swift */; };
+		F1A269D42AE8F3ED0007151C /* SteamApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A269D22AE8F3ED0007151C /* SteamApp.xcdatamodeld */; };
+		F1A269E12AE8F4E50007151C /* PromotedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269E02AE8F4E50007151C /* PromotedList.swift */; };
+		F1A269E32AE8F5B90007151C /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269E22AE8F5B90007151C /* FavoriteList.swift */; };
+		F1A269E52AE8F6940007151C /* PromotedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269E42AE8F6940007151C /* PromotedCell.swift */; };
+		F1A269E82AE8F8940007151C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269E72AE8F8940007151C /* Game.swift */; };
+		F1A269EC2AE8FBF40007151C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269EB2AE8FBF40007151C /* ModelData.swift */; };
+		F1A269EE2AE8FC380007151C /* GameAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269ED2AE8FC380007151C /* GameAPIService.swift */; };
+		F1A269F12AE8FCA00007151C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1A269F02AE8FCA00007151C /* Alamofire */; };
+		F1A269F32AE8FCF90007151C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269F22AE8FCF90007151C /* NetworkService.swift */; };
+		F1A269F52AE8FE350007151C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269F42AE8FE350007151C /* GameModel.swift */; };
+		F1A269F72AE911CA0007151C /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269F62AE911CA0007151C /* Details.swift */; };
+		F1A269F92AE914E00007151C /* CircledImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269F82AE914E00007151C /* CircledImage.swift */; };
+		F1A269FB2AE918390007151C /* DetailsPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269FA2AE918390007151C /* DetailsPricing.swift */; };
+		F1A269FD2AE91DAF0007151C /* Disponibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269FC2AE91DAF0007151C /* Disponibility.swift */; };
+		F1A269FF2AE91DF30007151C /* InputDisponibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A269FE2AE91DF30007151C /* InputDisponibility.swift */; };
+		F1A26A012AE91FAE0007151C /* PromotedPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A26A002AE91FAE0007151C /* PromotedPricing.swift */; };
+		F1A26A042AE92BBE0007151C /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A26A032AE92BBE0007151C /* CoreDataModel.swift */; };
+		F1A26A062AE930BE0007151C /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A26A052AE930BE0007151C /* FavoriteCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1A269C42AE8F3EC0007151C /* SteamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A269C72AE8F3EC0007151C /* SteamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamAppApp.swift; sourceTree = "<group>"; };
+		F1A269C92AE8F3EC0007151C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1A269CB2AE8F3ED0007151C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A269CE2AE8F3ED0007151C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1A269D02AE8F3ED0007151C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F1A269D32AE8F3ED0007151C /* SteamApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteamApp.xcdatamodel; sourceTree = "<group>"; };
+		F1A269E02AE8F4E50007151C /* PromotedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedList.swift; sourceTree = "<group>"; };
+		F1A269E22AE8F5B90007151C /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
+		F1A269E42AE8F6940007151C /* PromotedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedCell.swift; sourceTree = "<group>"; };
+		F1A269E72AE8F8940007151C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F1A269EB2AE8FBF40007151C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		F1A269ED2AE8FC380007151C /* GameAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAPIService.swift; sourceTree = "<group>"; };
+		F1A269F22AE8FCF90007151C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F1A269F42AE8FE350007151C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F1A269F62AE911CA0007151C /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		F1A269F82AE914E00007151C /* CircledImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledImage.swift; sourceTree = "<group>"; };
+		F1A269FA2AE918390007151C /* DetailsPricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPricing.swift; sourceTree = "<group>"; };
+		F1A269FC2AE91DAF0007151C /* Disponibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disponibility.swift; sourceTree = "<group>"; };
+		F1A269FE2AE91DF30007151C /* InputDisponibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDisponibility.swift; sourceTree = "<group>"; };
+		F1A26A002AE91FAE0007151C /* PromotedPricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedPricing.swift; sourceTree = "<group>"; };
+		F1A26A032AE92BBE0007151C /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		F1A26A052AE930BE0007151C /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A269C12AE8F3EC0007151C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A269F12AE8FCA00007151C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A269BB2AE8F3EC0007151C = {
+			isa = PBXGroup;
+			children = (
+				F1A269C62AE8F3EC0007151C /* SteamApp */,
+				F1A269C52AE8F3EC0007151C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A269C52AE8F3EC0007151C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269C42AE8F3EC0007151C /* SteamApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A269C62AE8F3EC0007151C /* SteamApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1A26A022AE92B840007151C /* CoreData */,
+				F1A269EA2AE8FBD10007151C /* Models */,
+				F1A269E92AE8FBC40007151C /* NetworkServices */,
+				F1A269E62AE8F87E0007151C /* Codable */,
+				F1A269DA2AE8F4120007151C /* Views */,
+				F1A269C72AE8F3EC0007151C /* SteamAppApp.swift */,
+				F1A269CB2AE8F3ED0007151C /* Assets.xcassets */,
+				F1A269D02AE8F3ED0007151C /* Persistence.swift */,
+				F1A269D22AE8F3ED0007151C /* SteamApp.xcdatamodeld */,
+				F1A269CD2AE8F3ED0007151C /* Preview Content */,
+			);
+			path = SteamApp;
+			sourceTree = "<group>";
+		};
+		F1A269CD2AE8F3ED0007151C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269CE2AE8F3ED0007151C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1A269DA2AE8F4120007151C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269C92AE8F3EC0007151C /* ContentView.swift */,
+				F1A269DE2AE8F4480007151C /* PromotedViews */,
+				F1A269DF2AE8F4520007151C /* DetailsViews */,
+				F1A269DC2AE8F4310007151C /* FavoriteViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1A269DC2AE8F4310007151C /* FavoriteViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269E22AE8F5B90007151C /* FavoriteList.swift */,
+				F1A26A052AE930BE0007151C /* FavoriteCell.swift */,
+			);
+			path = FavoriteViews;
+			sourceTree = "<group>";
+		};
+		F1A269DE2AE8F4480007151C /* PromotedViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269E02AE8F4E50007151C /* PromotedList.swift */,
+				F1A269E42AE8F6940007151C /* PromotedCell.swift */,
+				F1A26A002AE91FAE0007151C /* PromotedPricing.swift */,
+			);
+			path = PromotedViews;
+			sourceTree = "<group>";
+		};
+		F1A269DF2AE8F4520007151C /* DetailsViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269F62AE911CA0007151C /* Details.swift */,
+				F1A269F82AE914E00007151C /* CircledImage.swift */,
+				F1A269FA2AE918390007151C /* DetailsPricing.swift */,
+				F1A269FC2AE91DAF0007151C /* Disponibility.swift */,
+				F1A269FE2AE91DF30007151C /* InputDisponibility.swift */,
+			);
+			path = DetailsViews;
+			sourceTree = "<group>";
+		};
+		F1A269E62AE8F87E0007151C /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269E72AE8F8940007151C /* Game.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		F1A269E92AE8FBC40007151C /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269ED2AE8FC380007151C /* GameAPIService.swift */,
+				F1A269F22AE8FCF90007151C /* NetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		F1A269EA2AE8FBD10007151C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1A269EB2AE8FBF40007151C /* ModelData.swift */,
+				F1A269F42AE8FE350007151C /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1A26A022AE92B840007151C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F1A26A032AE92BBE0007151C /* CoreDataModel.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A269C32AE8F3EC0007151C /* SteamApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A269D72AE8F3ED0007151C /* Build configuration list for PBXNativeTarget "SteamApp" */;
+			buildPhases = (
+				F1A269C02AE8F3EC0007151C /* Sources */,
+				F1A269C12AE8F3EC0007151C /* Frameworks */,
+				F1A269C22AE8F3EC0007151C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamApp;
+			packageProductDependencies = (
+				F1A269F02AE8FCA00007151C /* Alamofire */,
+			);
+			productName = SteamApp;
+			productReference = F1A269C42AE8F3EC0007151C /* SteamApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A269BC2AE8F3EC0007151C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F1A269C32AE8F3EC0007151C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F1A269BF2AE8F3EC0007151C /* Build configuration list for PBXProject "SteamApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A269BB2AE8F3EC0007151C;
+			packageReferences = (
+				F1A269EF2AE8FCA00007151C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F1A269C52AE8F3EC0007151C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A269C32AE8F3EC0007151C /* SteamApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A269C22AE8F3EC0007151C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A269CF2AE8F3ED0007151C /* Preview Assets.xcassets in Resources */,
+				F1A269CC2AE8F3ED0007151C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A269C02AE8F3EC0007151C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A269F32AE8FCF90007151C /* NetworkService.swift in Sources */,
+				F1A269FD2AE91DAF0007151C /* Disponibility.swift in Sources */,
+				F1A269E52AE8F6940007151C /* PromotedCell.swift in Sources */,
+				F1A269E12AE8F4E50007151C /* PromotedList.swift in Sources */,
+				F1A269EC2AE8FBF40007151C /* ModelData.swift in Sources */,
+				F1A269D42AE8F3ED0007151C /* SteamApp.xcdatamodeld in Sources */,
+				F1A269F52AE8FE350007151C /* GameModel.swift in Sources */,
+				F1A269D12AE8F3ED0007151C /* Persistence.swift in Sources */,
+				F1A269E32AE8F5B90007151C /* FavoriteList.swift in Sources */,
+				F1A269F92AE914E00007151C /* CircledImage.swift in Sources */,
+				F1A269F72AE911CA0007151C /* Details.swift in Sources */,
+				F1A269EE2AE8FC380007151C /* GameAPIService.swift in Sources */,
+				F1A269CA2AE8F3EC0007151C /* ContentView.swift in Sources */,
+				F1A269FB2AE918390007151C /* DetailsPricing.swift in Sources */,
+				F1A26A012AE91FAE0007151C /* PromotedPricing.swift in Sources */,
+				F1A269C82AE8F3EC0007151C /* SteamAppApp.swift in Sources */,
+				F1A269E82AE8F8940007151C /* Game.swift in Sources */,
+				F1A26A062AE930BE0007151C /* FavoriteCell.swift in Sources */,
+				F1A26A042AE92BBE0007151C /* CoreDataModel.swift in Sources */,
+				F1A269FF2AE91DF30007151C /* InputDisponibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1A269D52AE8F3ED0007151C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A269D62AE8F3ED0007151C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A269D82AE8F3ED0007151C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SteamApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = be.technifutur.SteamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1A269D92AE8F3ED0007151C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SteamApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = be.technifutur.SteamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A269BF2AE8F3EC0007151C /* Build configuration list for PBXProject "SteamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A269D52AE8F3ED0007151C /* Debug */,
+				F1A269D62AE8F3ED0007151C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A269D72AE8F3ED0007151C /* Build configuration list for PBXNativeTarget "SteamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A269D82AE8F3ED0007151C /* Debug */,
+				F1A269D92AE8F3ED0007151C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1A269EF2AE8FCA00007151C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1A269F02AE8FCA00007151C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1A269EF2AE8FCA00007151C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F1A269D22AE8F3ED0007151C /* SteamApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A269D32AE8F3ED0007151C /* SteamApp.xcdatamodel */,
+			);
+			currentVersion = F1A269D32AE8F3ED0007151C /* SteamApp.xcdatamodel */;
+			path = SteamApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A269BC2AE8F3EC0007151C /* Project object */;
+}
