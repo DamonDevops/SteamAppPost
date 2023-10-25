@@ -13,6 +13,8 @@ struct Details: View {
     @StateObject private var viewModel = CoreDataModel()
     var game :GameModel
     
+    @State var isFavorite = false
+    
     var body: some View {
         VStack{
             Text(game.name)
@@ -33,9 +35,12 @@ struct Details: View {
             InputDisponibility(controller: game.controllerCompat)
             
             Button{
-                viewModel.addItem(game: game)
+                withAnimation {
+                    isFavorite ? viewModel.deleteItem(game: game) : viewModel.addItem(game: game)
+                    isFavorite.toggle()
+                }
             } label:{
-                Text("Add to favorite")
+                Text(isFavorite ? "Remove from favorite" : "Add to favorite")
             }
             .padding(16)
             
