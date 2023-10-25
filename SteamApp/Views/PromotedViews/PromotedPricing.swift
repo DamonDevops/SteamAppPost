@@ -12,13 +12,13 @@ struct PromotedPricing: View {
     
     var body: some View {
         HStack{
-            Text(game.discounted ? game.discountPercent : "")
-                .font(.largeTitle)
-                .foregroundColor(.green)
-                .padding(16)
-            
-            Spacer()
-            
+            if game.discounted {
+                Text(game.discountPercent)
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+                    .padding(8)
+                Spacer()
+            }
             VStack(alignment: .leading, spacing: 4){
                 Text(game.discounted ? game.originalPrice : "")
                     .foregroundColor(.gray)
@@ -29,6 +29,7 @@ struct PromotedPricing: View {
                     .font(.callout)
             }
         }
+        .frame(height: 50)
     }
 }
 

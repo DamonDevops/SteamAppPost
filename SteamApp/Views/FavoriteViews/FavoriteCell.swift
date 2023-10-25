@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavoriteCell: View {
-    var game :GameModel
+    @Binding var game :GameModel
     var timestamp :String
     
     var body: some View {
@@ -42,6 +42,6 @@ struct FavoriteCell: View {
 
 struct FavoriteCell_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteCell(game: GameModel(game: Game(id: 1, name: "A GOOD NAME", discounted: true, discountPercent: 25, originalPrice: 10000, finalPrice: 7500, isWindows: true,isMac: false, isLinux: true)), timestamp: CoreDataModel().dateFormatter(date: Date()))
+        FavoriteCell(game: .constant(GameModel(game: Game(id: 1, name: "A GOOD NAME", discounted: true, discountPercent: 25, originalPrice: 10000, finalPrice: 7500, isWindows: true,isMac: false, isLinux: true))), timestamp: CoreDataModel().dateFormatter(date: Date()))
     }
 }

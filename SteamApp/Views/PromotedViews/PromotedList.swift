@@ -16,7 +16,7 @@ struct PromotedList: View {
             VStack{
                 ScrollView{
                     LazyVGrid(columns: gridLayout, spacing: 8){
-                        ForEach(data.fullList.sorted(by: { $0.id < $1.id})){ game in
+                        ForEach($data.displayedList){ game in
                             NavigationLink{
                                 Details(game: game)
                             } label: {

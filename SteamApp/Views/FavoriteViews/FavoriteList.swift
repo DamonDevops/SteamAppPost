@@ -15,19 +15,21 @@ struct FavoriteList: View {
     var body: some View {
         NavigationView{
             List{
-                ForEach(viewModel.favGames){ favGame in
+                ForEach($data.favoriteList){ game in
                     NavigationLink{
-                        if let game = data.fullList.first(where: { $0.id == favGame.gameId}){
-                            Details(game: game)
-                        }
+                        Details(game: game)
                     } label: {
-                        if let game = data.fullList.first(where: { $0.id == favGame.gameId}){
-                            FavoriteCell(game: game, timestamp: viewModel.dateFormatter(date: favGame.timestamp!))
+                        if let fav = viewModel.favGames.first(where: { $0.gameId == game.id}){
+                            FavoriteCell(game: game, timestamp: viewModel.dateFormatter(date: fav.timestamp!))
                         }
                     }
                 }
             }
             .listStyle(.plain)
+            .background(.black)
+        }
+        .onAppear{
+            data.loadFavorite()
         }
     }
 }
@@ -35,5 +37,6 @@ struct FavoriteList: View {
 struct FavoriteList_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteList()
+            .environmentObject(ModelData())
     }
 }

@@ -14,8 +14,8 @@ class Networkservice {
             switch(response.result){
             case .success(let data):
                 if let data = data{
-                    let dataString = String(decoding: data, as: UTF8.self)
-                    print(dataString)
+                    //let dataString = String(decoding: data, as: UTF8.self)
+                    //print(dataString)
                     do{
                         let res = try JSONDecoder().decode(T.self, from: data)
                         completionHandler(res)

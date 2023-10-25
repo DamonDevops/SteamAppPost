@@ -11,9 +11,7 @@ struct Details: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.dismiss) private var dismiss
     @StateObject private var viewModel = CoreDataModel()
-    var game :GameModel
-    
-    @State var isFavorite = false
+    @Binding var game :GameModel
     
     var body: some View {
         VStack{
@@ -36,11 +34,11 @@ struct Details: View {
             
             Button{
                 withAnimation {
-                    isFavorite ? viewModel.deleteItem(game: game) : viewModel.addItem(game: game)
-                    isFavorite.toggle()
+                    game.isFavorite ? viewModel.deleteItem(game: game) : viewModel.addItem(game: game)
+                    game.isFavorite.toggle()
                 }
             } label:{
-                Text(isFavorite ? "Remove from favorite" : "Add to favorite")
+                Text(game.isFavorite ? "Remove from favorite" : "Add to favorite")
             }
             .padding(16)
             
@@ -71,6 +69,6 @@ struct Details: View {
 
 struct Details_Previews: PreviewProvider {
     static var previews: some View {
-        Details(game: GameModel(game: Game(id: 1, name: "A GOOD NAME", discounted: true, discountPercent: 25, originalPrice: 10000, finalPrice: 7500, isWindows: true,isMac: false, isLinux: true)))
+        Details(game: .constant(GameModel(game: Game(id: 1, name: "A GOOD NAME", discounted: true, discountPercent: 25, originalPrice: 10000, finalPrice: 7500, isWindows: true,isMac: false, isLinux: true))))
     }
 }

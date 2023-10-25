@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct PromotedCell: View {
-    var game :GameModel
+    @Binding var game :GameModel
     var body: some View {
         VStack{
             Text(game.name)
                 .foregroundColor(.white)
                 .bold()
                 .font(.headline)
-                .lineLimit(2)
+                .lineLimit(1)
             Spacer()
             AsyncImage(url: URL(string: game.posterImageURL)) { image in
                 image
@@ -26,18 +26,8 @@ struct PromotedCell: View {
                     .foregroundColor(.gray)
             }
             .frame(height: 100)
-            HStack{
-                Text(game.discountPercent)
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
-                Spacer()
-                VStack{
-                    Text(game.originalPrice)
-                        .foregroundColor(.gray)
-                    Text(game.finalPrice)
-                        .foregroundColor(.green)
-                }
-            }
+            Spacer()
+            PromotedPricing(game: game)
         }
         .background(.black)
     }
@@ -45,6 +35,6 @@ struct PromotedCell: View {
 
 struct PromotedCell_Previews: PreviewProvider {
     static var previews: some View {
-        PromotedCell(game: GameModel(game: Game(id: 1, name: "Pouet Quest", discountPercent: 25, originalPrice: 10000, finalPrice: 7500)))
+        PromotedCell(game: .constant(GameModel(game: Game(id: 1, name: "Pouet Quest", discountPercent: 25, originalPrice: 10000, finalPrice: 7500))))
     }
 }

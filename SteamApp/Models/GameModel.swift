@@ -37,11 +37,20 @@ struct GameModel :Identifiable, Hashable{
         self.isMac = game.isMac ?? false
         self.isLinux = game.isLinux ?? false
         self.controllerCompat = haveController(field: game.controllerCompat)
+        self.isFavorite = isInCoreData(id: game.id)
     }
 }
 
 func haveController(field :String?) -> Bool{
     if field != nil{
+        return true
+    }
+    return false
+}
+
+func isInCoreData(id :Int) -> Bool{
+    let viewModel = CoreDataModel()
+    if let bool = viewModel.favGames.firstIndex(where: { $0.gameId == id}){
         return true
     }
     return false
